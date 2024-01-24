@@ -1,0 +1,88 @@
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.carousel-images {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.carousel-image {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  z-index: -1;
+  opacity: 0;
+}
+.carousel-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.carousel-image-title {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(37, 240, 169, 1) 100%
+  );
+  width: 100%;
+  height: 30px;
+  font-size: larger;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+.carousel-image.active {
+  opacity: 1;
+  scale: 1.03;
+  z-index: 99;
+}
+.carousel-image.prev {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(-45%, -0%);
+}
+.carousel-image.next {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(45%, 0%);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.buttons button {
+  outline: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(212, 212, 212);
+  font-weight: 900;
+  border: 2px solid rgb(212, 212, 212);
+  padding: 8px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.buttons button svg {
+  fill: rgb(212, 212, 212);
+}

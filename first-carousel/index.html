@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="carousel-wrapper">
+        <div class="carousel-images">
+          <div class="carousel-image active">
+            <img src="http://via.placeholder.com/500x500" alt="first-image" />
+            <span class="carousel-image-title">First Image Title</span>
+          </div>
+          <div class="carousel-image next">
+            <img src="http://via.placeholder.com/500x500" alt="second-image" />
+            <span class="carousel-image-title">Second Image Title</span>
+          </div>
+          <div class="carousel-image">
+            <img src="http://via.placeholder.com/500x500" alt="third-image" />
+            <span class="carousel-image-title">Third Image Title</span>
+          </div>
+          <div class="carousel-image">
+            <img src="http://via.placeholder.com/500x500" alt="forth-image" />
+            <span class="carousel-image-title">Forth Image Title</span>
+          </div>
+          <div class="carousel-image prev">
+            <img src="http://via.placeholder.com/500x500" alt="fifth-image" />
+            <span class="carousel-image-title">Fifth Image Title</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="prev-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
+            </svg>
+          </button>
+          <button id="next-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
